@@ -3,11 +3,9 @@ from tkinter import filedialog as fd
 import os
 from PIL import Image
 
-
 root=Tk()
 root.geometry("400x400")
 root.title("Alatoo capybara's file converter")
-
 
 def jpg_to_png():
     filename=fd.askopenfilename()
@@ -32,18 +30,6 @@ Label_3=Label(root, text="copyright(c)2022, Alatoo International University. All
 Label_3.place(x=65,y=383)
 
 root.iconbitmap('D:\python img/logo.ico')
-
-
-
-
-
-
-
-
-
-
-
-
 
 Button(root,text="JPG to PNG", width=20, height=2, bg="brown",fg="white",command=jpg_to_png).place(x=120,y=120)
 Button(root,text="JPG to PDF", width=20, height=2, bg="brown",fg="white", command=jpg_to_pdf).place(x=120,y=220)
